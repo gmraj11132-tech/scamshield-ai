@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background-color: #050506;
+  color: #f4f4f5;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: -0.011em;
+}
+
+/* Minimalist Scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050506;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #27272a;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3f3f46;
+}
+
+/* Code Editor & Technical Metadata Font */
+.code-editor-font {
+  font-family: 'JetBrains Mono', 'SF Mono', Menlo, Consolas, Monaco, monospace;
+  font-feature-settings: 'liga' 0;
+}
+
+/* OpenAI style hairline divider */
+.hairline-border {
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+/* Interactive Highlighted Tags */
+.highlight-tag {
+  transition: all 0.15s ease-in-out;
+}
+
+.highlight-tag:hover {
+  filter: brightness(1.15);
+}
+
+/* Selection highlight */
+::selection {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+}
